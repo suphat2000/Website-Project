@@ -1,0 +1,164 @@
+   /* กำหนด พื้นหลัง font */
+   html{
+    background: rgb(208, 221, 238);
+    font-family: 'roboto',sans-serif;
+    padding: 20px 0;
+    
+  }
+  /* ข้อความยินดีต้อนรับ หน้า home */
+  l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 300%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+  /* ส่วนของ navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: rgb(160, 160, 255);
+    height: 8vh;
+    border: 5px solid #555;
+  }
+  nav .links {
+    display: flex;
+   
+  }
+  .links p {
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+   
+   
+  }
+  .ba{
+    
+    width: 100%;
+    max-width: 1640px;
+    margin: 0 auto;
+
+    display:  grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+   
+  }
+  
+ 
+
+@media screen and (min-width: 400px){
+   /* ส่วนของ min width 400px แบ่งให้เป็น 1fr*/
+  .ba{
+    grid-template-columns:  1fr;
+  }
+ 
+/* กำหนดค่าต่างๆใน กรอบ4เหลี่ยม*/
+  .card{
+    min-height: 120%;
+    background: white;
+    box-shadow: 0 2px 5px reba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:#555;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  .card:hover{
+    top:-2px;
+    box-shadow: 0 6px 5px reba(0,0,0,0.2);
+  }
+  .card article{
+    padding: 20px ;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .card .t{
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .card p{
+    flex: 1;
+    line-height: 1.5;
+
+  }
+  h1{
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    text-align: center;
+
+
+    
+  }
+ 
+
+  
+  
+
+
+
+
+
+@media screen and (min-width:800px) {
+   /* ส่วนของ min width 800px แบ่งให้เป็น 1fr 1fr  และกำหนดค่าต่างๆ ในกรอบสี่เหลี่ยม*/
+  .ba{
+    grid-template-columns:  1fr 1fr;
+  }
+  .item-1{
+    grid-column: 1 / span 2;
+  }
+
+ 
+  .card{
+    min-height: 100%;
+    background: white;
+    box-shadow: 0 2px 5px reba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:#555;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  .card:hover{
+    top:-2px;
+    box-shadow: 0 6px 5px reba(0,0,0,0.2);
+  }
+  .card article{
+    padding: 20px ;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .card .t{
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .card p{
+    flex: 1;
+    line-height: 1.5;
+
+  }
+  h1{
+    font-size: 20px;
+    margin: 0;
+    color: black;
+  }
+
+  
+}
+}
